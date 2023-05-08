@@ -69,12 +69,12 @@ class HomePage extends StatelessWidget {
                   )
                 ],
               ),
-              Padding(
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
-                child: Positioned.fill(
-                    child: Align(
-                  alignment: Alignment.bottomCenter,
+              Positioned.fill(
+                  child: Align(
+                alignment: Alignment.bottomCenter,
+                child: Padding(
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 40, vertical: 20),
                   child: Container(
                     decoration: BoxDecoration(
                         color: Colors.black,
@@ -99,8 +99,8 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                   ),
-                )),
-              )
+                ),
+              ))
             ],
           ),
         ),

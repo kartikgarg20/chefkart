@@ -31,24 +31,22 @@ class DetailPage extends StatelessWidget {
                 )
               : Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: Expanded(
-                    child: Column(
-                      children: [
-                        dishName(),
-                        const Divider(
-                          color: Color.fromARGB(255, 199, 199, 199),
-                          thickness: 2,
-                        ),
-                        ingredenets(),
-                        const Divider(
-                          color: Color.fromARGB(255, 199, 199, 199),
-                          thickness: 1,
-                        ),
-                        vegetable(),
-                        spices(),
-                        appliances()
-                      ],
-                    ),
+                  child: Column(
+                    children: [
+                      dishName(),
+                      Divider(
+                        color: Color.fromARGB(255, 199, 199, 199),
+                        thickness: 2,
+                      ),
+                      ingredenets(),
+                      Divider(
+                        color: Color.fromARGB(255, 199, 199, 199),
+                        thickness: 1,
+                      ),
+                      vegetable(),
+                      spices(),
+                      appliances()
+                    ],
                   ),
                 ),
         ),
